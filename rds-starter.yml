@@ -5,7 +5,7 @@ Resources:
     Type: AWS::RDS::DBInstance
     Properties:
       VPCSecurityGroups:
-      - <SECURITY-GROUP-ID>
+        - <MySecurityGroup>
       AllocatedStorage: '5'
       DBInstanceClass: db.t3.micro
       DBInstanceIdentifier: playground-db
